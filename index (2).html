@@ -1,0 +1,101 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device_width,initial-scale=1" />
+    <title>MODULE 2 SOLUTIONS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+      margin: 50px 0 50px;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 16px;
+      width: 100%;
+    }
+    .item {
+      position: relative;
+      background-color: gray;
+      border: 2px solid rgb(37, 37, 37);
+      padding: 40px 20px 5px;
+    }
+    .item > div {
+      font-size: 1.15em;
+      position: absolute;
+      width: fit-content;
+      right: 0;
+      top: 0;
+      margin-right: -2px;
+      margin-top: -2px;
+      padding: 5px 30px;
+      border: 2px solid rgb(37, 37, 37);
+    }
+
+    @media only screen and (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: auto auto;
+      }
+      .item:last-child {
+        grid-column: 1 / span 2;
+      }
+    }
+
+    @media only screen and (max-width: 520px) {
+      .grid-container {
+        grid-template-columns: auto;
+      }
+      .item:last-child {
+        grid-column: initial;
+      }
+    }
+  </style>
+  <body class="m-3">
+    <h1>OUR MENU</h1>
+    <div class="grid-container">
+      <div class="item">
+        <div style="background-color: #d49897">Chicken</div>
+        Lorem ipsum dolor sit amet. Et nihil deleniti qui odit tenetur hic sint
+        nulla in fugit illum eum optio perferendis. Eos numquam maiores eos
+        voluptas sequi ut esse quam. Et rerum laudantium ut similique quia vel
+        culpa rerum ut maxime culpa eum sint provident. Quo fuga voluptas ea
+        placeat facilis ut dignissimos corrupti. Id possimus aspernatur ut
+        quibusdam adipisci non rerum natus eum consectetur quisquam qui quae
+        ipsam.
+      </div>
+      <div class="item">
+        <div style="background-color: #c04544">Beef</div>
+        Lorem ipsum dolor sit amet. Et nihil deleniti qui odit tenetur hic sint
+        nulla in fugit illum eum optio perferendis. Eos numquam maiores eos
+        voluptas sequi ut esse quam. Et rerum laudantium ut similique quia vel
+        culpa rerum ut maxime culpa eum sint provident. Quo fuga voluptas ea
+        placeat facilis ut dignissimos corrupti. Id possimus aspernatur ut
+        quibusdam adipisci non rerum natus eum consectetur quisquam qui quae
+        ipsam.
+      </div>
+      <div class="item">
+        <div style="background-color: #e6d097">Sushi</div>
+        Lorem ipsum dolor sit amet. Et nihil deleniti qui odit tenetur hic sint
+        nulla in fugit illum eum optio perferendis. Eos numquam maiores eos
+        voluptas sequi ut esse quam. Et rerum laudantium ut similique quia vel
+        culpa rerum ut maxime culpa eum sint provident. Quo fuga voluptas ea
+        placeat facilis ut dignissimos corrupti. Id possimus aspernatur ut
+        quibusdam adipisci non rerum natus eum consectetur quisquam qui quae
+        ipsam.
+      </div>
+    </div>
+  </body>
+</html>
